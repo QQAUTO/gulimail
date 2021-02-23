@@ -1,0 +1,13 @@
+server:
+  port: 11000
+spring:
+  datasource:
+    password: root
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.228.128:3306/gulimail-wms
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
