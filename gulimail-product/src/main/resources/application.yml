@@ -5,12 +5,26 @@ spring:
     url: jdbc:mysql://192.168.228.128:3306/gulimail-pms
 #    driver-class-name: com.mysql.jdbc.Driver
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        ip: localhost
+        server-addr: 192.168.228.128:8848
+
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
     db-config:
       id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 
 server:
   port: 10001
+
+# 日志级别
+logging:
+  level:
+    com.atguigu.gulimail: debug
 

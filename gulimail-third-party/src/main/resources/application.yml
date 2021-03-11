@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.228.128:8848
+        ip: localhost
+    alicloud:
+      access-key: LTAI4G8oRecuzETwzfbseV7Q
+      secret-key: YUJzwkW0vQ2nTHGnbTr8ZXiUwil73d
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
+        bucket: gulimail-yu
+
+  application:
+    name: gulimail-third-party
+
+server:
+  port: 30000

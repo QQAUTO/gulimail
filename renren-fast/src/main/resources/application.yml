@@ -10,6 +10,13 @@ server:
     context-path: /renren-fast
 
 spring:
+  application:
+    name: renren-fast
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.228.128:8848
+        ip: localhost
   # 环境 dev|test|prod
   profiles:
     active: dev
@@ -37,6 +44,8 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
+
+
 #  resources:
 #    add-mappings: false
 
@@ -74,3 +83,5 @@ renren:
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
+
+

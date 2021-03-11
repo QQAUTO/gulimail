@@ -7,7 +7,8 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: 192.168.228.128:8848
+        ip: localhost
   application:
     name: gulimail-member
 
